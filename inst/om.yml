@@ -1,2 +1,5 @@
 program: revbayes
 details: Bayesian phylogenetic inference using probabilistic graphical models and an interpreted language
+docker: dombennett
+github: dombennett
+url: https://github.com/DomBennett/om..revbayes
