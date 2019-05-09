@@ -3,15 +3,14 @@
 #' @description Run revbayes
 #' @param ... Arguments
 #' @details Note, no interaction possible.
-#' @example /examples/example.R
+#' @example /examples/revbayes.R
 #' @export
 revbayes <- function(...) {
-  arglist <- outsider:::.arglist_get(...)
-  files_to_send <- outsider::.filestosend_get(arglist = arglist)
-  arglist <- outsider::.arglist_parse(arglist = arglist)
-  otsdr <- outsider::.outsider_init(repo = 'dombennett/om..revbayes',
-                                    cmd = 'rb', arglist = arglist,
-                                    files_to_send = files_to_send, wd = getwd())
+  arglist <- arglist_get(...)
+  files_to_send <- filestosend_get(arglist = arglist)
+  arglist <- arglist_parse(arglist = arglist)
+  otsdr <- outsider_init(pkgnm = 'om..revbayes', cmd = 'rb', arglist = arglist,
+                         files_to_send = files_to_send, wd = getwd())
   # run the command
-  outsider::.run(otsdr)
+  run(otsdr)
 }
