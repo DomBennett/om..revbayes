@@ -1,4 +1,4 @@
-# Run `revbayes` with `outsider` in R
+# Run [`revbayes`](https://revbayes.github.io/) with `outsider` in R
 [![Build Status](https://travis-ci.org/dombennett/om..revbayes.svg?branch=master)](https://travis-ci.org/dombennett/om..revbayes)
 
 
